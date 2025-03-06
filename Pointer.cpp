@@ -5,9 +5,10 @@ int main(){
     int i;
     int *k;
     k = array;
+ 
+    int sebelum = 0 , min, max, sum = 0, avg;
 
-    int sebelum, min, max, sum, avg;
-
+     min = max = *k;
     for(i=0;i<5;i++){
          cout<<*(k+i)<<" "<<endl;
         if(sebelum <*(k+i)){
@@ -32,3 +33,4 @@ int main(){
     cout << "Maximal : " << max << endl;
     cout << "Rata-rata : " << avg << endl;
     cout << "Jumlah : " << sum << endl;
+}
